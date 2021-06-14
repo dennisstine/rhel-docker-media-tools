@@ -9,7 +9,7 @@ services:
       - /dev/dri:/dev/dri
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=1005
       - TZ=America/Chicago
       - UMASK_SET=022
       - VERSION=docker
@@ -23,7 +23,7 @@ services:
     container_name: sabnzbd
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=1005
       - TZ=America/Chicago
     volumes:
       - /media_server/configs/sabnzbd:/media_server/config
@@ -40,7 +40,7 @@ services:
     container_name: sonarr
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=1005
       - TZ=America/Chicago
     volumes:
       - /media_server/configs/sonarr:/config
@@ -54,7 +54,7 @@ services:
     container_name: radarr
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=1005
       - TZ=America/Chicago
     volumes:
       - /media_server/configs/radarr:/config
