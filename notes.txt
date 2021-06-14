@@ -1,0 +1,13 @@
+docker pull linuxserver/plex
+docker pull linuxserver/sabnzbd
+docker pull linuxserver/sonarr
+docker pull linuxserver/radarr
+
+https://github.com/linuxserver/docker-plex
+https://github.com/linuxserver/docker-sabnzbd
+
+
+
+
+firewall-cmd --zone=public --permanent --add-service=http
+firewall-cmd --zone=public --permanent --add-port 32400/tcp
