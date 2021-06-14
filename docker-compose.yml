@@ -26,9 +26,9 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - /media_server/configs/sabnzbd:/config
-      - /media_server/sabnzbd/downloads:/downloads
-      - /media_server/sabnzbd/incomplete:/incomplete
+      - /media_server/configs/sabnzbd:/media_server/config
+      - /media_server/sabnzbd/downloads:/media_server/downloads
+      - /media_server/sabnzbd/incomplete:/media_server/incomplete
       - /media_server/plex:/media_server/plex
     ports:
       - 8080:8080
