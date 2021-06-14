@@ -16,6 +16,8 @@ services:
     volumes:
       - /media_server/configs/plex:/config
       - /media_server/plex:/data/plex
+    ports:
+      - 32400:32400
     restart: unless-stopped
     
   sabnzbd:
