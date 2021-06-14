@@ -4,5 +4,11 @@ https://github.com/linuxserver/docker-sonarr
 https://github.com/linuxserver/docker-radarr
 
 
-// remote all containers:
-docker kill $(docker ps -q)
+// kill running containers:
+docker kill $(docker ps -aq)
+
+// remove stopped containers:
+docker rm $(docker ps -aq)
+
+// remove old volumes:
+docker system prune --volumes -f
