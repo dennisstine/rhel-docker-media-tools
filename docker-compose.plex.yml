@@ -5,9 +5,13 @@ services:
     image: ghcr.io/linuxserver/plex
     container_name: plex
     network_mode: host
+    devices:
+      - /dev/dri:/dev/dri
     environment:
       - PUID=1000
       - PGID=1000
+      - TZ=America/Chicago
+      - UMASK_SET=022
       - VERSION=docker
     volumes:
       - /plex/config:/config
