@@ -2,3 +2,7 @@ https://github.com/linuxserver/docker-plex
 https://github.com/linuxserver/docker-sabnzbd
 https://github.com/linuxserver/docker-sonarr
 https://github.com/linuxserver/docker-radarr
+
+
+// remote all containers:
+docker kill $(docker ps -q)
