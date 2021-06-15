@@ -4,6 +4,18 @@ https://github.com/linuxserver/docker-sonarr
 https://github.com/linuxserver/docker-radarr
 
 
+
+group: gid
+mediasrv: 2000
+
+users: uid
+plex: 2000
+sabnzbd: 2001
+sonarr: 2002
+radarr: 2003
+
+
+
 // kill running containers:
 docker kill $(docker ps -aq)
 
