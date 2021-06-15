@@ -1,5 +1,5 @@
 ---
-version: "2.1"
+version: "3.8"
 services:
   plex:
     image: ghcr.io/linuxserver/plex
@@ -8,8 +8,8 @@ services:
     devices:
       - /dev/dri:/dev/dri
     environment:
-      - PUID=1000
-      - PGID=1005
+      - PUID=2000
+      - PGID=2000
       - TZ=America/Chicago
       - UMASK_SET=022
       - VERSION=docker
@@ -22,12 +22,12 @@ services:
     image: ghcr.io/linuxserver/sabnzbd
     container_name: sabnzbd
     environment:
-      - PUID=1000
-      - PGID=1005
+      - PUID=2001
+      - PGID=2000
       - TZ=America/Chicago
     volumes:
-      - /media_server/configs/sabnzbd:/media_server/config
-      - /media_server/sabnzbd/downloads:/media_server/downloads
+      - /media_server/configs/sabnzbd:/config
+      - /media_server/sabnzbd/complete:/media_server/complete
       - /media_server/sabnzbd/incomplete:/media_server/incomplete
       - /media_server/plex:/media_server/plex
     ports:
@@ -39,8 +39,8 @@ services:
     image: ghcr.io/linuxserver/sonarr
     container_name: sonarr
     environment:
-      - PUID=1000
-      - PGID=1005
+      - PUID=2002
+      - PGID=2000
       - TZ=America/Chicago
     volumes:
       - /media_server/configs/sonarr:/config
@@ -53,8 +53,8 @@ services:
     image: ghcr.io/linuxserver/radarr
     container_name: radarr
     environment:
-      - PUID=1000
-      - PGID=1005
+      - PUID=2003
+      - PGID=2000
       - TZ=America/Chicago
     volumes:
       - /media_server/configs/radarr:/config
