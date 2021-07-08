@@ -23,8 +23,8 @@ mkdir -p "$plex_dir/tv"
 mkdir -p "$plex_dir/photos"
 
 mkdir -p "$sabnzbd_dir"
-mkdir -p "$sabnzbd_dir/movies"
-mkdir -p "$sabnzbd_dir/tv"
+mkdir -p "$sabnzbd_dir/complete"
+mkdir -p "$sabnzbd_dir/incomplete"
 
 mkdir -p "$sonarr_dir"
 mkdir -p "$sonarr_dir/complete"
