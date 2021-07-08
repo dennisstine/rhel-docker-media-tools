@@ -86,4 +86,4 @@ services:
       - /var/lib/docker/:/var/lib/docker:ro
       - /dev/disk:/dev/disk/:ro
     ports:
-    - '9090:8080'
+    - '8282:8080'
