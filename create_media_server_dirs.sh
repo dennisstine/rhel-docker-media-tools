@@ -49,3 +49,5 @@ chown -R sabnzbd:mediasrv "$configs_dir/sabnzbd"
 chown -R sonarr:mediasrv "$configs_dir/sonarr"
 chown -R radarr:mediasrv "$configs_dir/radarr"
 chown -R tautulli:mediasrv "$configs_dir/tautulli"
+
+chmod -R 775 "$home_dir"
