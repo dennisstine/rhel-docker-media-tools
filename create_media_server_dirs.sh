@@ -37,4 +37,4 @@ mkdir -p "$sonarr_dir/incomplete"
 
 mkdir -p "$radarr_dir"
 mkdir -p "$radarr_dir/complete"
-mkdir -p "$radarr_dir/incomplate"
+mkdir -p "$radarr_dir/incomplete"
