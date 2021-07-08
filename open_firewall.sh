@@ -18,6 +18,12 @@ sudo firewall-cmd --zone=public --permanent --add-port 8989/tcp
 # radarr
 sudo firewall-cmd --zone=public --permanent --add-port 7878/tcp
 
+# tautulli
+sudo firewall-cmd --zone=public --permanent --add-port 8181/tcp
+
+# cadvisor
+sudo firewall-cmd --zone=public --permanent --add-port 8282/tcp
+
 sudo firewall-cmd --reload
 
 sudo firewall-cmd --list-all
