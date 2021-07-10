@@ -1,0 +1,12 @@
+  tautulli:
+    image: ghcr.io/linuxserver/tautulli
+    container_name: tautulli
+    environment:
+      - PUID=2004
+      - PGID=2000
+      - TZ=America/Chicago
+    volumes:
+      - /media_server/configs/tautulli:/config
+    ports:
+      - 8181:8181
+    restart: unless-stopped
