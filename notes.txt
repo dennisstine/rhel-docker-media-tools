@@ -15,6 +15,9 @@ sonarr: 2002
 radarr: 2003
 
 
+docker tcp access: http://192.168.1.200:2375
+
+
 
 // kill running containers:
 docker kill $(docker ps -aq)
