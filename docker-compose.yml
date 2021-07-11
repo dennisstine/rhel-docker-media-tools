@@ -79,3 +79,4 @@ services:
       - '8282:8080'
     devices:
       - /dev/kmsg:/dev/kmsg
+    restart: unless-stopped
