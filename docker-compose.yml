@@ -84,6 +84,6 @@ services:
   media-server-home-page:
     image: dennisstine/media-server-home-page
     container_name: home-page
-    orts:
+    ports:
       - '80:80'
     restart: unless-stopped
