@@ -64,7 +64,7 @@ services:
     restart: unless-stopped
     
   cadvisor:
-    image: 'google/cadvisor:latest'
+    image: google/cadvisor:latest
     container_name: cadvisor
     privileged: true
     volumes:
@@ -79,4 +79,11 @@ services:
       - '8282:8080'
     devices:
       - /dev/kmsg:/dev/kmsg
+    restart: unless-stopped
+    
+  media-server-home-page:
+    image: dennisstine/media-server-home-page
+    container_name: home-page
+    orts:
+      - '80:80'
     restart: unless-stopped
