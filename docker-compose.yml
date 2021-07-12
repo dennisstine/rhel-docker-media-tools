@@ -76,7 +76,7 @@ services:
       - /sys/fs/cgroup/cpu:/sys/fs/cgroup/cpu
       - /sys/fs/cgroup/cpuacct:/sys/fs/cgroup/cpuacct
     ports:
-      - '8282:8080'
+      - 8282:8080
     devices:
       - /dev/kmsg:/dev/kmsg
     restart: unless-stopped
@@ -85,5 +85,5 @@ services:
     image: dennisstine/media-server-home-page
     container_name: home-page
     ports:
-      - '80:80'
+      - 80:80
     restart: unless-stopped
